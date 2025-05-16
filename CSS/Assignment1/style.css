@@ -1,0 +1,45 @@
+*{
+ margin: 5px;
+ padding: 5px;
+}
+#container{
+ width: 950px;
+ background-color: silver;
+ margin: 0px auto; 
+}
+#header{
+ height: 150px;
+ background-color: blue;
+ 
+}
+#nav_bar{
+ height: 300px;
+ width: 180px;
+ background-color: red;
+ display: inline-block; 
+ vertical-align: top;  
+
+}
+#main_content{
+ height: 360px;
+ width: 725px; 
+             
+ background-color: yellow;
+ display: inline-block; 
+ vertical-align: top;   
+ 
+}
+.subcontent{
+ height: 200px;
+ width: 210px;
+ background-color: purple;
+ display: inline-block; 
+ vertical-align: top;   
+
+}
+#advertisements{
+ height: 90px;
+ width: 680px; 
+ background-color: pink;
+ 
+}

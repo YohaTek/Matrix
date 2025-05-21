@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #BEBEBE; /* Outer page background (medium gray) */
+    font-size: 14px;
+    color: #000000;
+}
+
+.page-container {
+    width: 1000px;
+    margin: 10px auto; /* Centering and some top/bottom margin */
+    background-color: #F0F0F0; /* Main content area background (very light gray) */
+}
+
+/* Header */
+.page-header {
+    background-color: #E0E0E0; /* Header band background (light gray) */
+    padding: 8px 10px;
+    line-height: 1.5; /* Helps align inline-block children */
+    font-size: 0; /* To remove whitespace between inline-block elements if not careful with HTML */
+}
+
+.header-left, .header-center, .header-right {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px; /* Reset font-size for content within */
+}
+
+.header-left {
+    width: 160px; /* Approximate width for "craigslist" */
+}
+.header-left a {
+    font-size: 26px;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+}
+
+.header-center {
+    width: calc(100% - 160px - 240px - 4px); /* Adjusted for precise centering */
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+
+.header-right {
+    width: 230px; /* Approximate width for select and button */
+    text-align: right;
+}
+.header-right select, .header-right input[type="submit"] {
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 1px 3px;
+    vertical-align: middle; /* Align with text if any */
+}
+.header-right select {
+    border: 1px solid #777;
+}
+.header-right input[type="submit"] {
+     border: 1px solid #777;
+     background-color: #EFEFEF; /* Light gray button */
+}
+
+
+/* Content Wrapper (Sidebar + Main Columns) */
+.content-wrapper {
+    padding: 10px;
+    font-size: 0; /* To remove whitespace between inline-block elements */
+}
+
+/* Sidebar */
+.sidebar {
+    display: inline-block;
+    width: 190px; /* Content width */
+    vertical-align: top;
+    padding: 10px;
+    background-color: #E0E0E0; /* Sidebar background (light gray, same as header) */
+    font-size: 14px; /* Reset font size */
+    margin-right: 10px;
+}
+
+.sidebar a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.sidebar-top-links {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+.sidebar-top-links a {
+    display: inline; /* "help?" "post a listing" etc. are somewhat inline */
+    margin-right: 6px;
+    font-weight: bold;
+}
+.sidebar-top-links a:last-child {
+    margin-right: 0;
+}
+
+
+.search-craigslist {
+    background-color: #D0D0D0; /* Darker gray for search box background */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #A0A0A0;
+}
+.search-craigslist h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.search-craigslist input[type="text"] {
+    width: calc(100% - 10px); /* Account for padding/border */
+    margin-bottom: 5px;
+    padding: 2px 4px;
+    border: 1px solid #777;
+    font-size: 13px;
+}
+.search-craigslist select {
+    width: calc(60% - 8px);
+    margin-right: 2%;
+    padding: 2px;
+    border: 1px solid #777;
+    font-size: 13px;
+    vertical-align: middle;
+}
+.search-craigslist input[type="submit"] {
+    width: calc(38% - 8px);
+    padding: 2px 5px;
+    font-size: 13px;
+    border: 1px solid #777;
+    background-color: #EFEFEF;
+    vertical-align: middle;
+}
+
+.sidebar-bottom-links a {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.sidebar .email {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sidebar .email a {
+    font-weight: normal;
+    font-size: 13px;
+}
+.sidebar .updated-date {
+    font-size: 12px;
+    color: #333333;
+    margin-top: 15px;
+}
+
+/* Main Columns Area */
+.main-columns {
+    display: inline-block;
+    /* Total available: 1000 (page) - 20 (wrapper L/R pad) - 190 (sidebar W) - 20 (sidebar L/R pad) - 10 (sidebar M_R) = 760px */
+    width: 758px; /* Adjusted to fit, allowing for minor rounding/border issues */
+    vertical-align: top;
+    font-size: 14px; /* Reset font size */
+}
+
+.column {
+    display: inline-block;
+    /* 758px total. 3 columns. (758 - 2*10margin) / 3 = (738)/3 = 246px */
+    width: 244px; /* A bit of wiggle room */
+    vertical-align: top;
+    margin-right: 10px;
+    font-size: 13px; /* Links in columns are a bit smaller */
+}
+.column:last-child {
+    margin-right: 0;
+}
+
+.category-group {
+    margin-bottom: 15px;
+}
+.category-group h3 {
+    background-color: #D0D0D0; /* Gray background for category titles, same as search box */
+    padding: 3px 5px;
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1em; /* Relative to column font-size (13px) */
+    font-weight: bold;
+    border: 1px solid #A0A0A0;
+    color: black;
+}
+.category-group ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.category-group li {
+    margin-bottom: 3px; /* Tight line spacing */
+}
+.category-group li a {
+    color: blue;
+    text-decoration: underline;
+    display: inline; /* Links flow with text if any, but mostly on their own line */
+}
+
+.column .misc-links {
+    margin-top: 10px; /* Space after personals */
+    margin-bottom: 10px; /* Space before discussion boards */
+}
+.column .misc-links p {
+    margin: 0 0 3px 0; /* Spacing between activity partners and carpool */
+}
+.column .misc-links p a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.column .discussion-boards {
+    margin-top: 15px;
+}
+.column .discussion-boards a {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.05em; /* Slightly larger than other links in column */
+}

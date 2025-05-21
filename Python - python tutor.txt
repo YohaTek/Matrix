@@ -1,0 +1,10 @@
+Python - python tutor
+Jave - java visualizer
+JavaScript - freecode camp 
+C++ - programmiz
+SQL - 
+
+cyber serucirty - try hack me
+web security - burp suite academy
+hacking - hack the box
+cyber security using game - over the wire

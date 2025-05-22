@@ -1,0 +1,158 @@
+ body {
+            font-family: 'Arial', sans-serif; /* Use a common sans-serif font */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Ensure body takes at least the full viewport height */
+            background-color: #fff; /* White background */
+            margin: 0;
+            padding: 20px; /* Add some padding around the content */
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 380px; /* Set a max width similar to the image */
+            text-align: center; /* Center text inside */
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in the width */
+        }
+
+        .twitter-logo {
+            width: 50px; /* Adjust size as needed */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #0f1419; /* Twitter's dark text color */
+        }
+
+        .button {
+            display: flex; /* Use flexbox to center content */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            border-radius: 9999px; /* Highly rounded corners */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            text-decoration: none; /* Remove underline for links styled as buttons */
+            color: inherit; /* Inherit text color */
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+        .button img {
+            width: 18px; /* Adjust logo size inside button */
+            height: 18px;
+            margin-right: 10px; /* Space between logo and text */
+        }
+
+        .google-button {
+            border: 1px solid #dadee0; /* Light gray border */
+            background-color: #fff; /* White background */
+            color: #0f1419; /* Dark text */
+        }
+
+        .apple-button {
+            border: 1px solid #dadee0; /* Light gray border */
+            background-color: #fff; /* White background */
+            color: #0f1419; /* Dark text */
+        }
+
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+            color: #5b7083; /* Gray text color */
+            font-size: 15px;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #dadee0; /* Light gray line */
+        }
+
+        .separator:not(:empty)::before {
+            margin-right: .25em; /* Space before 'or' */
+        }
+
+        .separator:not(:empty)::after {
+            margin-left: .25em; /* Space after 'or' */
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 15px 10px;
+            margin-bottom: 20px;
+            border: 1px solid #dadee0; /* Light gray border */
+            border-radius: 4px; /* Slightly rounded corners */
+            font-size: 16px;
+            box-sizing: border-box; /* Include padding and border in width */
+            outline: none; /* Remove default outline */
+            transition: border-color 0.2s ease;
+        }
+
+        .input-field:focus {
+             border-color: #1da1f2; /* Twitter blue on focus */
+        }
+
+        .next-button {
+            width: 100%;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 9999px;
+            background-color: #0f1419; /* Dark background */
+            color: #fff; /* White text */
+            font-size: 17px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Optional: Hover effects */
+        .button:hover {
+            background-color: #e7e7e7; /* Light gray hover */
+        }
+        .next-button:hover {
+             background-color: #272c30; /* Slightly lighter dark on hover */
+        }
+         .forgot-password:hover,
+         .sign-up-link:hover {
+            text-decoration: underline;
+         }
+
+
+        .forgot-password {
+            display: block; /* Make it a block to center it */
+            width: 100%; /* Take full width to apply padding/border */
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            border-radius: 9999px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #0f1419; /* Dark text */
+            border: 1px solid #dadee0; /* Light gray border */
+            background-color: #fff;
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+
+        .signup-text {
+            margin-top: 30px;
+            color: #5b7083; /* Gray text */
+            font-size: 15px;
+        }
+
+        .signup-text a {
+            color: #1da1f2; /* Twitter blue */
+            text-decoration: none;
+        }

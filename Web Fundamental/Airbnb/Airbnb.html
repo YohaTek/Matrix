@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBed & Breakfast</title>
+    <link rel="stylesheet" href="./docs/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AirBed & Breakfast – Find a place to stay.</h1>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </nav>
+            <p class="listing-unavailable">This listing is no longer available.</p>
+        </header>
+
+        <main class="main-content">
+            <section class="find-place-section">
+                <h2>Find a place to stay.</h2>
+                <p class="rent-details">
+                    <a href="#">Rent nightly from real people in 830 cities in 73 countries.</a>
+                </p>
+                <form class="search-form">
+                    <div>
+                        <label for="where">Where are you going?</label>
+                        <input type="text" id="where" name="where">
+                    </div>
+                    <div>
+                        <label for="checkin">Check in</label>
+                        <input type="text" id="checkin" name="checkin" placeholder="mm/dd/yyyy">
+                    </div>
+                    <div>
+                        <label for="checkout">Check out</label>
+                        <input type="text" id="checkout" name="checkout" placeholder="mm/dd/yyyy">
+                    </div>
+                    <div>
+                        <label for="guests">Guests</label>
+                        <input type="number" id="guests" name="guests" value="1" min="1">
+                    </div>
+                </form>
+
+                <div class="featured-location">
+                    <p class="location-name">San Francisco, CA</p>
+                    <p class="location-price">Rooms from $29/night</p>
+                    <img src="./docs/1.jpg" alt="1">
+                </div>
+
+                <div class="as-seen-on">
+                    <span>As seen on:</span>
+                    <img src="./docs/2.jpg" alt="2">
+                    <img src="./docs/3.jpg" alt="3" class="nyt-logo">
+                    <img src="./docs/4.jpg" alt="4">
+                    <img src="./docs/5.jpg" alt="5">
+                    <img src="./docs/6.jpg" alt="6" class="wsj-logo">
+                    <img src="./docs/7.jpg" alt="7">
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="featured-listing">
+                    <img src="./docs/8.jpg" alt="8">
+                    <div class="listing-info">
+                        <img src="./docs/9.jpg" alt="9" class="avatar">
+                        <div class="listing-details">
+                            <p><a href="#">"Gabs place"</a> - Amsterdam, Netherlands</p>
+                            <p>$85/night</p>
+                            <p>1 Review</p>
+                        </div>
+                    </div>
+                    <div class="listing-controls">
+                        <span>◀◀</span> <span>❚❚</span> <span>▶▶</span>
+                    </div>
+                </div>
+
+                <div class="recently-reviewed">
+                    <p class="sidebar-title">Frances & Greg, Los Angeles</p>
+                    <p class="sidebar-subtitle">Recently reviewed</p>
+                    <img src="./docs/10.jpg" alt="10">
+
+                    <p class="sidebar-title">Washington DC</p>
+                    <p class="sidebar-subtitle">From $10/night</p>
+                    <img src="./docs/11.jpg" alt="11">
+
+                    <p class="sidebar-title">Paris, France</p>
+                    <p class="sidebar-subtitle">Rooms from $20/night</p>
+                    <img src="./docs/12.jpg" alt="12">
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Privacy</a></li>
+                    <li>Biggest Deals: <a href="#">New York</a></li>
+                    <li><a href="#">San Francisco</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li>Join us on: <a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">© AirBed & Breakfast, Inc.</p>
+        </footer>
+    </div>
+</body>
+</html>

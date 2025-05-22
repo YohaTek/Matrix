@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    padding: 20px 20px 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    color: #000;
+}
+
+.top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.top-nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.listing-unavailable {
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.main-content {
+    display: flex;
+    padding: 20px 0;
+}
+
+.find-place-section {
+    flex: 0 0 62%;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    flex: 0 0 38%;
+    box-sizing: border-box;
+}
+
+.find-place-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.rent-details {
+    margin: 0 0 20px 0;
+    font-size: 13px;
+}
+.rent-details a {
+    text-decoration: underline;
+}
+
+.search-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.search-form input[type="text"],
+.search-form input[type="number"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.search-form input#where {
+    width: 250px;
+}
+
+.search-form input#checkin,
+.search-form input#checkout {
+    width: 250px;
+}
+
+/* the spin button was not sticking, and I had to use a source that I don't understand well, but it works*/
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+      opacity: 1 !important;
+    }
+.search-form input#guests {
+    width: 60px;
+}
+
+.featured-location {
+    margin-top: 25px;
+    border: 1px solid #eee;
+    padding: 10px;
+    display: inline-block;
+}
+
+.featured-location .location-name {
+    font-size: 12px;
+    color: #D9006C;
+    margin: 0;
+}
+
+.featured-location .location-price {
+    font-size: 11px;
+    color: #555;
+    margin: 2px 0 8px 0;
+}
+
+.featured-location img {
+    max-width: 180px;
+    display: block;
+}
+
+.as-seen-on {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.as-seen-on span {
+    font-size: 14px;
+    color: #333;
+    margin-right: 5px;
+}
+
+.as-seen-on img {
+    height: 20px;
+    vertical-align: middle;
+}
+.as-seen-on img.nyt-logo { height: 22px; }
+.as-seen-on img.wsj-logo { height: 18px; }
+
+.sidebar .featured-listing > img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.listing-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.listing-info .avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid #eee;
+}
+
+.listing-details p {
+    margin: 0 0 3px 0;
+    font-size: 13px;
+}
+.listing-details p:first-child a {
+    font-weight: bold;
+}
+
+.listing-controls {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.listing-controls span {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.sidebar-title {
+    font-size: 13px;
+    color: #D9006C;
+    margin: 15px 0 0 0;
+}
+.recently-reviewed .sidebar-title:first-of-type {
+    margin-top: 0;
+}
+
+.sidebar-subtitle {
+    font-size: 11px;
+    color: #555;
+    margin: 2px 0 5px 0;
+}
+
+.recently-reviewed img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.footer-nav li:last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #555;
+    margin: 10px 0 0 0;
+}

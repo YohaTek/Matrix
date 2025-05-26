@@ -1,0 +1,22 @@
+ body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    main {
+      flex: 1 0 auto;
+      padding-top: 20px; /* Add some space below the fixed navbar */
+    }
+    .button-container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center; /* Center buttons */
+    }
+    .button-container .btn {
+        margin: 5px; /* Add space between buttons if they wrap */
+    }
+    /* Optional: Make table headers more prominent */
+    th {
+        font-weight: bold;
+        background-color: #f2f2f2;
+    }

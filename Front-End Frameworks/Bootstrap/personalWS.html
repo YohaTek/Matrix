@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yohannes's Personal Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+ 
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4">Welcome to Yohannes's Personal Website</h1>
+            <p class="lead">Hi, I am Yohannes, and I am passionate about computer networks.</p>
+        </header>
+
+        <section id="about" class="my-5">
+            <h2>About Me</h2>
+            <p>I enjoy exploring network configurations and technologies.</p>
+        </section>
+
+        <section id="tools" class="my-5">
+            <h3>My Favorite Networking Tools:</h3>
+            <ul class="list-group">
+                <li class="list-group-item"> <a href="https://www.Wireshark.com" target="_blank">Wireshark</a> </li>
+                <li class="list-group-item"> <a href="https://www.cisco.com" target="_blank">CML</a></li>
+                <li class="list-group-item"> <a href="https://www.eve-ng.com" target="_blank">EVE-NG</a></li>
+            </ul>
+        </section>
+
+        <section id="contact-links" class="my-5">
+            <h3>Contact Me</h3>
+            <a href="https://www.linkedin.com/in/yohannes-teklay/" class="btn btn-primary" target="_blank">via LinkedIn</a>
+        </section>
+
+        <section id="skills" class="my-5">
+            <h3>Networking Skills</h3>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Skill</th>
+                        <th>Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Routing</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Switching</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Network Security</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="feedback" class="my-5">
+            <h3>Feedback Form</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="interest" class="form-label">Interest in Networking:</label>
+                    <select class="form-select" id="interest" name="interest">
+                        <option value="routing">Routing</option>
+                        <option value="switching">Switching</option>
+                        <option value="security">Security</option>
+                    </select>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" name="subscribe" id="subscribeNewsletter">
+                    <label class="form-check-label" for="subscribeNewsletter">
+                        Subscribe to Newsletter
+                    </label>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Preferred Contact:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contact" value="email" id="contactEmail">
+                        <label class="form-check-label" for="contactEmail">
+                            Email
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contact" value="phone" id="contactPhone">
+                        <label class="form-check-label" for="contactPhone">
+                            Phone
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">Created by Yohannes - Network Enthusiast <span>© 2025</span></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -80,8 +80,8 @@ section h3 {
 
 #commentTable {
     margin-top: 1rem;
-    table-layout: fixed; /* Crucial for respecting column widths */
-    width: 100%;         /* Ensure table uses full width of its container */
+    table-layout: fixed; 
+    width: 100%;        
 }
 
 #commentTable th {
@@ -89,17 +89,16 @@ section h3 {
     color: #212529;
 }
 
-/* Column widths for the comment table */
-#commentTable th:nth-child(1), /* First header cell (Name) */
-#commentTable td:nth-child(1) { /* First data cell in each row (Name) */
+#commentTable th:nth-child(1), 
+#commentTable td:nth-child(1) { 
     width: 20%;
-    vertical-align: top; /* Align text to the top, good for multi-line comments */
+    vertical-align: top; 
 }
 
-#commentTable th:nth-child(2), /* Second header cell (Comment) */
-#commentTable td:nth-child(2) { /* Second data cell in each row (Comment) */
+#commentTable th:nth-child(2), 
+#commentTable td:nth-child(2) { 
     width: 80%;
-    word-break: break-word; /* Prevent long words from breaking layout */
-    vertical-align: top; /* Align text to the top */
+    word-break: break-word; 
+    vertical-align: top; 
 }
 

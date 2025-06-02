@@ -1,0 +1,105 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #e9ecef;
+    border-bottom: 3px solid #0d6efd;
+    color: #212529;
+}
+
+header h1.display-4 {
+    color: #0056b3;
+}
+
+section h2,
+section h3 {
+    color: #495057;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#tools .list-group-item a {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+#tools .list-group-item a:hover {
+    color: #0056b3;
+    text-decoration: underline !important;
+}
+
+#contact-me .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#contact-me .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#skills .table thead.table-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+#skills .table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+#feedback {
+    background-color: #ffffff;
+}
+
+#feedback .form-label {
+    font-weight: 500;
+}
+
+#feedback .btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+#feedback .btn-success:hover {
+    background-color: #157347;
+    border-color: #157347;
+}
+
+#comments-display {
+    background-color: #ffffff;
+}
+
+#comments-display h3 {
+    color: #495057;
+}
+
+#commentTable {
+    margin-top: 1rem;
+    table-layout: fixed; /* Crucial for respecting column widths */
+    width: 100%;         /* Ensure table uses full width of its container */
+}
+
+#commentTable th {
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+/* Column widths for the comment table */
+#commentTable th:nth-child(1), /* First header cell (Name) */
+#commentTable td:nth-child(1) { /* First data cell in each row (Name) */
+    width: 20%;
+    vertical-align: top; /* Align text to the top, good for multi-line comments */
+}
+
+#commentTable th:nth-child(2), /* Second header cell (Comment) */
+#commentTable td:nth-child(2) { /* Second data cell in each row (Comment) */
+    width: 80%;
+    word-break: break-word; /* Prevent long words from breaking layout */
+    vertical-align: top; /* Align text to the top */
+}
+

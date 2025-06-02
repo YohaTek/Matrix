@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yohannes's Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <header class="text-center py-4">
+            <h1 class="display-4">Welcome to Yohannes's Personal Website</h1>
+            <p class="lead">Hi, I am Yohannes, and I am passionate about computer networks.</p>
+        </header>
+
+        <section id="about" class="my-5 p-4 bg-light rounded shadow-sm">
+            <h2>About Me</h2>
+            <p>I enjoy exploring network configurations and technologies.</p>
+        </section>
+
+        <section id="tools" class="my-5">
+            <h3>My Favorite Networking Tools:</h3>
+            <ul class="list-group shadow-sm">
+                <li class="list-group-item"> <a href="https://www.Wireshark.com" target="_blank" class="text-decoration-none">Wireshark</a> </li>
+                <li class="list-group-item"> <a href="https://www.cisco.com" target="_blank" class="text-decoration-none">CML</a></li>
+                <li class="list-group-item"> <a href="https://www.eve-ng.com" target="_blank" class="text-decoration-none">EVE-NG</a></li>
+            </ul>
+        </section>
+
+        <section id="contact-me" class="my-5 text-center">
+            <h3>Contact Me</h3>
+            <a href="https://www.linkedin.com/in/yohannes-teklay/" class="btn btn-primary btn-lg shadow-sm" target="_blank">via LinkedIn</a>
+        </section>
+
+        <section id="skills" class="my-5">
+            <h3>Networking Skills</h3>
+            <div class="table-responsive shadow-sm">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Skill</th>
+                            <th>Proficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Routing</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Switching</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Network Security</td>
+                            <td>Intermediate</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="feedback" class="my-5 p-4 border rounded shadow-sm">
+            <h3>Feedback Form</h3>
+            <form id="feedbackForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                        <label for="comment" class="form-label">Comments:</label>
+                        <textarea class="form-control" id="comment" name="comment" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success shadow-sm" id="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section id="comments-display" class="my-5 p-4 border rounded shadow-sm">
+            <h3>Submitted Feedback</h3>
+            <div class="table-responsive">
+                <table class="table table-striped" id="commentTable">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Name</th>    
+                            <th>Comment</th> 
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Table rows gets created and inserted here using the javascript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">Created by Yohannes - Network Enthusiast <span>© 2025</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
+</body>
+</html>

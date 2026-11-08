@@ -1,0 +1,39 @@
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# Dependencies (if a toolchain is added later)
+node_modules/
+vendor/
+
+# Build output and generated files
+dist/
+build/
+out/
+*.min.css
+*.min.js
+*.map
+
+# Logs and local environment
+*.log
+npm-debug.log*
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.bak
